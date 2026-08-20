@@ -1,0 +1,24 @@
+{
+  "name": "EloHunters",
+  "version": "1.0.0",
+  "description": "Discord honeypot bot",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "npx ts-node src/index.ts",
+    "register": "npx ts-node src/register.ts",
+    "deregister": "npx ts-node src/deregister.ts",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "discord.js": "^14.15.0",
+    "dotenv": "^16.4.5",
+    "node-sqlite3-wasm": "^0.8.55"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.0"
+  }
+}
