@@ -1,6 +1,6 @@
 # EloHunters
 
-discord honeypot bot. set a trap channel, and anyone who posts in it gets insta-banned. built to catch bots, hacked accounts, and spammers before they can do damage.
+discord EloHunters discord bot
 
 ## setup
 
