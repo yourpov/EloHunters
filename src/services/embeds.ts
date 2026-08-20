@@ -32,6 +32,13 @@ export function warningNotice(days: number) {
     return { embeds: [embed] }
 }
 
+export function productEmbed(title: string, content: string, media?: { url: string; isVideo: boolean }, thumbnailUrl?: string): EmbedBuilder {
+    const embed = base(COLORS.brand).setTitle(title).setDescription(content)
+    if (thumbnailUrl) embed.setThumbnail(thumbnailUrl)
+    if (media && !media.isVideo) embed.setImage(media.url)
+    return embed
+}
+
 export function success(msg: string) {
     return { embeds: [base(COLORS.success).setDescription(`✅ ${msg}`)] }
 }

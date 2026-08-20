@@ -11,6 +11,7 @@ import type { Event }   from '../types'
 import { get }          from '../services/registry'
 import * as embeds      from '../services/embeds'
 import { hpButton, hpModal } from '../commands/honeypot'
+import { productModal }      from '../commands/product'
 
 async function guard(
     i: ChatInputCommandInteraction | ButtonInteraction | ModalSubmitInteraction,
@@ -43,5 +44,6 @@ export const event: Event = {
         if (i.isChatInputCommand()) return guard(i, `/${i.commandName}`, () => runCommand(i))
         if (i.isButton() && i.customId.startsWith('hp:')) return guard(i, 'Honeypot button', () => hpButton(i))
         if (i.isModalSubmit() && i.customId.startsWith('hp_modal:')) return guard(i, 'Honeypot form', () => hpModal(i))
+        if (i.isModalSubmit() && i.customId.startsWith('product_modal:')) return guard(i, 'Product form', () => productModal(i))
     },
 }

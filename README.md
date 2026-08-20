@@ -25,6 +25,7 @@ npm install; npm run register; npm run dev
 |---------|-------------|
 | /honeypot | set the trap channel and ban length, disable it, or refresh the status |
 | /rules    | sends server rules embed |
+| /product  | post or update a named product embed. optional image/video upload or video link, thumbnail, and a link button. auto-pings @everyone (spoilered) |
 
 ## how it works
 
