@@ -1,6 +1,6 @@
 # EloHunters
-
 discord EloHunters discord bot
+
 <img width="662" height="353" alt="image" src="https://github.com/user-attachments/assets/68164228-6d01-4466-83b3-f3e09ff40481" />
 
 ## setup
